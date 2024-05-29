@@ -9,3 +9,15 @@
     { "src": "/(.*)", "dest": "/" }
   ]
 }
+
+{
+  "functions": {
+    "api/**/*": {
+      "maxDuration": 10,
+      "memory": 128
+    },
+    "functions/largeFunction.js": {
+      "includeFiles": "false"
+    }
+  }
+}
